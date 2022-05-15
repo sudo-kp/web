@@ -6,6 +6,10 @@ html, body, h2, h3, h5, p {
     padding: 0;
 }
 
+title {
+    font-family: Comfortaa, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
