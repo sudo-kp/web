@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:400');
 
+a {
+    color: #011638;
+}
+
+a:visited {
+    color: #011638;
+}
+
 #show-container {
     display: flex;
     flex-direction: column;
@@ -112,8 +120,9 @@ h1 {
     margin-bottom: 2vw;
 }
 
-#month-container a {
+#month-container label {
     display: block;
+    width: fit-content;
     font-family: "Comfortaa", sans-serif;
     font-size: 1.3vw;
     color: #011638;
@@ -170,6 +179,23 @@ label, #weekday {
     margin-bottom: 3vw;
 }
 
+#date-selector form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+}
+
+input[type="radio"]:checked+label{
+    background-image: url("images/frame4.svg");
+    background-size: cover;
+}
+
+
 #vertical-show-container {
     display: none;
     flex-direction: column;
@@ -196,7 +222,7 @@ label, #weekday {
         width: 98%;
     }
 
-    #month-container a {
+    #month-container label {
         font-size: 1.5vw;
     }
 }
@@ -214,7 +240,7 @@ label, #weekday {
         font-size: 1.7vw;
     }
 
-    #month-container a {
+    #month-container label {
         font-size: 1.8vw;
         padding: 1.8vw 2.2vw;
     }
@@ -266,7 +292,7 @@ label, #weekday {
         width: 42%;
     }
 
-    #month-container a {
+    #month-container label {
         font-size: 2vw;
         padding: 1.8vw 2.2vw;
     }
@@ -294,7 +320,7 @@ label, #weekday {
         font-size: 2.3vw;
     }
 
-    #month-container a {
+    #month-container label {
         font-size: 3vw;
         padding: 2.5vw 2.2vw;
     }
@@ -362,7 +388,7 @@ label, #weekday {
         margin-bottom: 4vw;
     }
 
-    #month-container a {
+    #month-container label {
         font-size: 5vw;
         padding: 4vw 2.2vw;
     }

@@ -40,14 +40,19 @@
 
     <div id="date-selector">
         <h1>АФІША</h1>
-        <div id="month-container">
-            <a href="#" class="selected-month">КВІТЕНЬ 2022</a>
-            <a href="#">ТРАВЕНЬ 2022</a>
-            <a href="#">ЧЕРВЕНЬ 2022</a>
-        </div>
-        <label for="day">День</label>
-        <input type="number" id="day" min="1" max="31" value="13" size="2">
-        <input type="submit" value="Submit" hidden>
+
+        <form method="get" action="container.html">
+            <div id="month-container">
+                <input type="radio" id="april" name="month" value="4" checked><label for="april">КВІТЕНЬ 2022</label>
+                <input type="radio" id="may" name="month" value="5"><label for="may">ТРАВЕНЬ 2022</label>
+                <input type="radio" id="june" name="month" value="6"><label for="june">ЧЕРВЕНЬ 2022</label>
+            </div>
+
+
+            <label for="day">День</label><br>
+            <input type="number" id="day" min="1" max="31" name="day" value="13" size="2">
+            <input type="submit" value="Submit" hidden>
+        </form>
         <div id="weekday">Середа</div>
     </div>
 
@@ -71,7 +76,7 @@
                         спробуємо».
                     </p>
                 </div>
-                <a href="#">
+                <a href="informational.html">
                     <div class="details-button">
                         Детальніше
                     </div>
